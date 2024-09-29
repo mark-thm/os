@@ -1,7 +1,7 @@
 package:
   name: croc
-  version: 10.0.11
-  epoch: 0
+  version: 10.0.12
+  epoch: 1
   description: Easily and securely send things from one computer to another
   copyright:
     - license: MIT
@@ -21,7 +21,7 @@ pipeline:
   - uses: git-checkout
     with:
       repository: https://github.com/schollz/croc
-      expected-commit: bf26db019cbe2862aef963cd0a32f5f2d62d15d4
+      expected-commit: defee4b4f606221d68118f6022e83ffc591a3a46
       tag: v${{package.version}}
 
   - uses: go/build

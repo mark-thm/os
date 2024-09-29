@@ -1,6 +1,6 @@
 package:
   name: wash
-  version: 0.31.0
+  version: 0.34.0
   epoch: 0
   description: "WAsmcloud SHell - a comprehensive command-line tool for wasmCloud development"
   copyright:
@@ -20,7 +20,9 @@ pipeline:
     with:
       repository: https://github.com/wasmcloud/wasmcloud
       tag: wash-cli-v${{package.version}}
-      expected-commit: 8403350432a2387d4a2bce9c096f002005ba54be
+      expected-commit: 84633c20117cab57890a62b7b2e734df78133933
+
+  - uses: rust/cargobump
 
   - name: Configure and build
     runs: |

@@ -1,6 +1,6 @@
 package:
   name: sigstore-scaffolding
-  version: 0.7.7
+  version: 0.7.11
   epoch: 0
   description: Software Supply Chain Transparency Log
   copyright:
@@ -38,7 +38,7 @@ pipeline:
     with:
       repository: https://github.com/sigstore/scaffolding
       tag: v${{package.version}}
-      expected-commit: fd2699d622d15b39c2bf7bc7ca4e005d4dda0e24
+      expected-commit: 3c79cb2714d1c724551ae859bcbde1a3204ff8ac
 
 subpackages:
   - range: components
